@@ -1,0 +1,88 @@
+html {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 100%;
+    color: #333;
+    background-color: #111;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Helvetica", Sans-Serif;
+
+}
+
+header>div {
+    background-color: #587272;
+    color: white;
+    font-size: 1.2em;
+    padding: .5em 1em;
+}
+
+main>div {
+    background-color: #587272;
+    color: white;
+    font-size: 1.2em;
+    padding: .5em 1em;
+}
+
+
+div {
+    display: block;
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    font-size: 4em;
+    background-color: rgba(47, 79, 79, 1);
+    background-color: #022;
+    color: white;
+    margin: 0.5em 0 .25em 0;
+    padding: .125em .25em .25em .25em;
+    line-height: 1;
+    text-shadow: 0 -2px 1px #587272;
+}
+
+h3 {
+    font-size: 2em;
+    background-color: rgba(47, 79, 79, 1);
+    background-color: #022;
+    color: white;
+    margin: 0.5em 0 .25em 0;
+    padding: .125em .25em .25em .25em;
+    line-height: 1;
+    text-shadow: 0 -2px 1px #587272;
+}
+
+button#startgame {
+    border: thin solid #999;
+    font-size: 2em;
+    padding: .25em .5em;
+    background-color: rgb(0, 34, 34, 1);
+    color: white;
+}
+
+dialog {
+    padding: 0;
+    background: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #587272;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+p#something {
+    border: thin solid #aa2727;
+    padding: 0.35em 0.50em;
+    background-color: #587272;
+    font-size: 2em;
+}

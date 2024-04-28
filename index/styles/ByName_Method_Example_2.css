@@ -1,0 +1,31 @@
+html {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 100%;
+    color: #000000;
+    background-color: #ddfabc;
+}
+
+header>div {
+    background-color: #587272;
+    color: white;
+    font-size: 1.2em;
+    padding: .5em 1em;
+    text-align: center;
+}
+
+div {
+    background-color: #587272;
+    color: white;
+    font-size: 1.2em;
+    padding: .5em 1em;
+    text-align: center;
+}
+
+.demoDiv {
+    border: 3px outset rgb(240, 234, 234);
+    background-color: #20b5f0;
+    color: rgb(14, 13, 13);
+    font-weight: 600;
+    text-align: left;
+
+}

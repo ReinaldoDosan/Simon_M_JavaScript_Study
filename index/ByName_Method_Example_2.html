@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- ByNameMethod_Example_2.hmtl-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/ByName_Method_Example_2.css">
+    <script type="text/javascript" src="scripts/ByName_Method_Example_2.js" crossorigin="anonymous" defer></script>
+
+    <title>JavaScript getElementsByName</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            JavaScript example of getElementsByName() Method
+        </div>
+    </header>
+</body>
+<h2>The following example shows a radio group that consists of radio buttons that have the same name (rate).<br>
+    When you select a radio button and click the submit button, the page will show the selected value such as, VERY
+    POOR, POEE, OK, GOOD, or VERY GOOD:</h2>
+<BR>
+<hr>
+<p>Please rate the service</p>
+<p>
+    <label for="very-poor">
+        <input type="radio" name="rate" value="Very poor" id="very-poor"> Very poor
+    </label>
+    <br>
+    <label for="poor">
+        <input type="radio" name="rate" value="Poor" id="poor"> Poor
+    </label>
+    <br>
+    <label for="ok">
+        <input type="radio" name="rate" value="ok" id="ok"> Ok
+    </label>
+    <br>
+    <label for="good">
+        <input type="radio" name="rate" value="Good" id="good"> Good
+    </label>
+    <br>
+    <label for="very-good">
+        <input type="radio" name="rate" value="Very Good" id="very-good"> Very Good
+    </label>
+</p>
+<p>
+    <button id="btnRate">Submit</button>
+</p>
+<p id="output"></p>
+
+</html>
+
+
+<!--
+    https://www.javascripttutorial.net/javascript-dom/javascript-getelementsbyname/
+-->

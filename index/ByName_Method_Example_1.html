@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- ByNameMethod_Example_1.hmtl-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/ByName_Method_Example_1.css">
+    <script type="text/javascript" src="scripts/ByName_Method_Example_1.js" crossorigin="anonymous" defer></script>
+    <title>Example of document.getElementsByName() Method</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">Example od document.getElementByTagName() method</div>
+    </header>
+    <h1>The document Object</h1>
+    <h2>The document.getElementsByName Method</h2>
+    <div>
+        Get all elements with the name "fname";
+    </div>
+    <p>
+    <div class="demoDiv">
+        <p>First Name: <input name="fname" type="text" value="Michael"></p>
+        <p>First Name: <input name="fname" type="text" value="Doug"></p>
+        <p>The tag name of the first element with the name "fname" is:</p>
+        <p id="demo"></p>
+    </div>
+    <p>
+    <div>
+        Get the number of element with the name="animal".
+    </div>
+    <p>
+    <div class="demoDiv">
+        Cats:
+        <input name="animal" type="checkbox" value="Cats">
+        Dogs
+        <input name="animal" type="checkbox" value="Dogs">
+        <p>Number os elements with name="animal" is:</p>
+        <p id="demo2"></p>
+
+    </div>
+    <p>
+    <div>
+        This fnction returns collection of elements. By using the build in method ength we can find the total number od
+        elements presents inside that particular element. Below example illustrates it clearly.
+    </div>
+    <p>
+    <div class="demoDiv">
+        <!--creating tag with name ga-->
+        <h4 name="ga">Geeks</h4>
+        <h4 name="ga">For</h4>
+        <h4 name="ga">Geeks</h4>
+        <input type="button" onclick="geeks()" value="Click Here" />
+
+    </div>
+</body>
+
+</html>

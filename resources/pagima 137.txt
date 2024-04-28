@@ -1,0 +1,14 @@
+https://www.dell.com/pt-br/shop/notebooks-gamer/notebook-gamer-dell-g15/spd/g-series-15-5530-laptop/g5530u001w
+
+https://pure-javascript.net/
+
+
+http://localhost:8000/Simon_M_JavaScript_Study/game.html
+
+
+http://127.0.0.1:3000/game.html
+
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math
+sobre math
+

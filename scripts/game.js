@@ -9,10 +9,6 @@ window.onerror = function (message, url, line) {
     alert(`Error: ${message}\n${url}: ${line}`);
 };
 
-function random(max) {
-    // returns a random number from 1 ... max
-    return Math.floor(Math.random() * max) + 1;
-}
 
 init();
 function init() {
@@ -22,25 +18,34 @@ function init() {
 
 function playGame() {
     //  Set up the data
+    let min, max;
     let answer, guess;
     let message;
+
     // Initialise
     // answer = 57;
-    answer = random(100);
+    [min, max] = [1, 100]; // alternatively: min=1;
+    max = 100;
+    answer = random(max);
     message = 'Guess the Number';
+    //return 'game over';
     // Repeat
     do {
-        guess = prompt(message);
-        if (guess === null) return;
+        guess = prompt(`${message}\nFrom ${min} to ${max}`);
+
+        if (guess === null) return `Game Cancelled`;
+        guess = parseInt(guess) || 0; // covert to a number
         if (guess < answer) {
             // Too Small
             // Plan A
             message = 'Too Low';
+            min = guess + 1;
         }
         else if (guess > answer) {
             // Too Big
             // Plan B
             message = 'Too High';
+            max = guess - 1;
         }
         else {
             // Correct
@@ -49,44 +54,10 @@ function playGame() {
         }
     } while (guess != answer);
 
+    return `Game Over`;
 
     // The user guesses the number.
     // Check the number and tell the user
     //... until correct.    
 
 }
-/*
-    let min, max;
-    let answer, guess;
-    let message;
-    //  Initialise
-    [min, max] = [1, 100];
-    answer = random(100);
-    message = 'Guess the Number';
-    do {
-        guess = prompt(`${message}\nFrom ${min} to ${max}`);
-        if (guess === null) return 'game cancelled';
-        guess = parseInt(guess) || 0;
-        if (guess < answer) {
-            message = 'Too Low';
-            min = guess + 1;
-        }
-        //  Too Small
-        else if (guess > answer) {   //  Too Big
-            message = 'Too High';
-            max = guess - 1;
-        }
-        else {
-            //  Correct
-            alert('Correct');
-        }
-    } while (guess != answer);
-    return 'game over';
-}
-
-
-// user guesses
-//Check and report
-
-// ... until correct */
-

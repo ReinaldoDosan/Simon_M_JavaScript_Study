@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts/ByTagName_Method_Example_1.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles/ByTagName_Method_Example_1.css">
+    <title>Example of document.getElementByTagName() method</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="header">Example od document.getElementByTagName() method</div>
+    </header>
+    <main>
+        <h3>In this example, we going to count total number of paragraphs used in the document. To do this, we have
+            called the document.getElementsByTagName("p") method that returns the total paragraphs</h3>
+
+        <p id="something">This is a paragraphs</p>
+        <p id="something">Here we are going count total number of paragraphs by getElementByTagName() method.</p>
+        <p id="something">Let´s see the simple example</p>
+
+
+        <button onclick="countpara()">Count Paragraphs</button>
+        <p>
+        <div id="main">
+            In this example, we going to count total number of h2 and h3 tags used in the document.
+        </div>
+        <p>
+        <div id="main>">
+            <h2>This is h2 tag</h2>
+            <h2>This is h2 tag</h2>
+        </div>
+        <p>
+            <button onclick="counth2()">Count h2</button>
+        <p>
+            <button onclick="counth3()">Count h3</button>
+    </main>
+
+</body>
+
+</html>
